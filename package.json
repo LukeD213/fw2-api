@@ -2,7 +2,8 @@
   "name": "express",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "5.1.0"
+    "express": "5.1.0",
+    "install": "^0.13.0"
   },
   "devDependencies": {
     "@types/express": "5.0.0",
