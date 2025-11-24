@@ -3,10 +3,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
  
-// Define your routes
-app.get('/', (req, res) => {
-  res.json({ message: 'Hello from Express on Vercel!' });
-});
+app.set('view engine','ejs')
+app.set('views',"../views")
+require("../rotas/home")(app);
  
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
