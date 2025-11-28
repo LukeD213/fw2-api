@@ -9,6 +9,11 @@ app.set('views',"../views")
 require("../db/db")(app);
 require("../rotas/home")(app);
 require("../rotas/getnoticias")(app);
+require("../rotas/getidnoticias")(app);
+require("../rotas/gettiponoticias")(app);
+require("../rotas/putnoticias")(app);
+require("../rotas/postnoticias")(app);
+require("../rotas/delnoticias")(app);
  
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
