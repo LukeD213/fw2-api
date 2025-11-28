@@ -1,7 +1,7 @@
 const { ObjectId } = require("mongodb")
 
 module.exports=(app)=>{
-    app.post('/postnoticias', async(req,res)=>{
+    app.post('/putnoticias', async(req,res)=>{
         try{
             const id=ObjectId.createFromHexString(req.body._id)
             const titulonoticia=req.body.titulonoticia
