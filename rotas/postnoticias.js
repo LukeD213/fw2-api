@@ -14,7 +14,7 @@ module.exports=(app)=>{
                 })
             res.status(200).send("Noticia Cadastrada")
         } catch(error){
-            res.status(400).send("Não foi possivel cadastrar a noticia")
+            res.status(400).send(error)
         }
     })
 }
