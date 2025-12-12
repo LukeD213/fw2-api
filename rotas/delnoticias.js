@@ -7,9 +7,9 @@ module.exports=(app)=>{
             const resultado = await app.DBClient.db('portalnoticias')
                 .collection('noticias')
                 .deleteOne({_id: id})
-            res.send("Noticia apagada")
-        } catch(error){
-            res.status(400).send("Erro ao apagar a noticia: "+error)
+         res.status(200).json({ status: 1 })
+        } catch (error) {
+            res.status(400).json({ status: 0 })
         }
     })
 }
